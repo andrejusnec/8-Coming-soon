@@ -1,19 +1,16 @@
 .container {
     display: inline-block;
     width: 100%;
-    background-color: yellow;
     padding: calc(var(--section_padding) * 2) 0;
 }
     .container > .row-short{
 display: inline-block;
 width: 600px;
-background-color: aqua;
 margin-left: calc(50% - 300px);
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
-        background-color: orangered;
         margin-left: calc(50% - 500px);
     }
     .container > .row > .colum{
@@ -22,10 +19,8 @@ margin-left: calc(50% - 300px);
     }
         .container > .row > .colum.left {
             width: 50%;
-            background-color: peru;
         }
         .container > .row > .colum.right {
             width: 40%;
             margin-left: 10%;
-            background-color: tomato;
         }
