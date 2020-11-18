@@ -1,0 +1,14 @@
+/*custom css*/
+.container.hero {
+    padding-bottom: var(--section_padding);
+}
+footer.container {
+    padding-top: 0;
+    padding: calc(var(--section_padding) * 1.5);
+}
+footer.container > .row-short{
+    margin-top: var(--section_padding);
+}
+.bg-main-color {
+    background-color: var(--main_color);
+}
