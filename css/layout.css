@@ -7,6 +7,7 @@
 display: inline-block;
 width: 600px;
 margin-left: calc(50% - 300px);
+text-align: center;
     }
     .container > .row {
         display: inline-block;
@@ -24,3 +25,58 @@ margin-left: calc(50% - 300px);
             width: 40%;
             margin-left: 10%;
         }
+        @media (max-width:1100px) {
+            .container > .row {
+                width: 800px;
+                margin-left: calc(50% - 400px);
+            }
+        }@media (max-width:900px) {
+            .container > .row {
+                width: 600px;
+                margin-left: calc(50% - 300px);
+            }
+        }
+        @media (max-width:700px) {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .container > .row-short {
+                width: 100%;
+                margin-left: 0;
+            }
+            .container > .row {
+                width: 400px;
+                margin-left: calc(50% - 200px);
+            }
+            .container > .row > .colum.left {
+                width: 100%;
+            }
+            .container > .row > .colum.right {
+                width: 100%;
+                margin-left: 0;
+                margin-top: calc(var(--section_padding) * 2);
+            }
+        }
+
+
+        /*@media(max-width: 500px) {
+            .container{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .container > .row-short{
+                display: inline-block;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                background-color: chocolate;
+            }
+            .container > .row{
+                display: inline-block;
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+                background-color:grey
+            }
+        }*/
