@@ -6,13 +6,11 @@
     .container > .row-short{
 display: inline-block;
 width: 600px;
-background-color: lime;
 margin-left: calc(50% - 300px);
 text-align: center;
     }
     .container > .row {
         display: inline-block;
-        background-color: pink;
         width: 1000px;
         margin-left: calc(50% - 500px);
     }
@@ -30,21 +28,25 @@ text-align: center;
         @media (max-width:1100px) {
             .container > .row {
                 width: 800px;
-                background-color:yellow;
                 margin-left: calc(50% - 400px);
             }
         }@media (max-width:900px) {
             .container > .row {
                 width: 600px;
-                background-color: red;
                 margin-left: calc(50% - 300px);
             }
         }
         @media (max-width:700px) {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .container > .row-short {
+                width: 100%;
+                margin-left: 0;
+            }
             .container > .row {
-                display: inline-flexbox;
                 width: 400px;
-                background-color: blueviolet;
                 margin-left: calc(50% - 200px);
             }
             .container > .row > .colum.left {
