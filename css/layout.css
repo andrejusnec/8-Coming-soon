@@ -7,12 +7,14 @@
 display: inline-block;
 width: 600px;
 margin-left: calc(50% - 300px);
+margin-right: calc(50% - 300px);
 text-align: center;
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc(50% - 500px);
+        margin-right: calc(50% - 500px);
     }
     .container > .row > .colum{
         display: inline-block;
@@ -29,11 +31,13 @@ text-align: center;
             .container > .row {
                 width: 800px;
                 margin-left: calc(50% - 400px);
+                margin-right: calc(50% - 400px);
             }
         }@media (max-width:900px) {
             .container > .row {
                 width: 600px;
                 margin-left: calc(50% - 300px);
+                margin-right: calc(50% - 300px);
             }
         }
         @media (max-width:700px) {
@@ -46,8 +50,8 @@ text-align: center;
                 margin-left: 0;
             }
             .container > .row {
-                width: 400px;
-                margin-left: calc(50% - 200px);
+                width: 100%;
+                margin-left: 0;
             }
             .container > .row > .colum.left {
                 width: 100%;
@@ -55,6 +59,8 @@ text-align: center;
             .container > .row > .colum.right {
                 width: 100%;
                 margin-left: 0;
+                margin: 0;
+                /*check this */
                 margin-top: calc(var(--section_padding) * 2);
             }
         }
