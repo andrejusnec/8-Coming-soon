@@ -31,7 +31,7 @@ footer.container > .row-short{
     margin-bottom: calc(var(--hero_space));
 }
 .hero p {
-    color: rgb(58, 51, 51);
+    color: var(--grey-color);
     width: 100%;
     font-size: 18px;
     display: inline-block;
@@ -59,3 +59,23 @@ footer.container > .row-short{
     text-align: center;
     
 }*/
+main h2{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--main_space);
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+main p{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: var(--grey-color);
+    line-height: 26px;
+    margin-bottom: var(--main_space);
+}
+main p > a {
+    color: var(--second-color);
+    text-decoration: none;
+}

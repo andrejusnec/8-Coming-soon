@@ -2,5 +2,8 @@
 :root {
     --section_padding: 30px;
     --main_color: #03A9F4;
+    --main_space:20px;
     --hero_space: 20px;
+    --second-color: #EA1E63;
+    --grey-color: rgb(58, 51, 51);
 }

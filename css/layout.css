@@ -9,12 +9,10 @@
         display: inline-block;
         text-align: center;
         grid-column: 3/5;
-        background-color: orangered;
     }
     .container > .row {
         display: inline-block;
         grid-column: 2/6;
-        background-color: yellow;
     }
     .container > .row > .colum{
         display: inline-block;
