@@ -7,7 +7,6 @@
 }
     .container > .row-short{
         display: inline-block;
-        text-align: center;
         grid-column: 3/5;
     }
     .container > .row {
