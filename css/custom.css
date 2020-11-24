@@ -2,6 +2,11 @@
 /*.layout*/
 .container.hero {
     padding-bottom: var(--section_padding);
+    background-image: url(../img/hero\ bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 100vh;
 }
 footer.container {
     padding: calc(var(--section_padding) * 1.5);
