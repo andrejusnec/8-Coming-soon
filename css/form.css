@@ -1,3 +1,39 @@
 .form {
+    display: inline-block;
+    width: 100%;
+    color: #444;
+}
+.form > input {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        margin-bottom: 30px;
+        font-size: 18px;
+        border: none;
+        line-height: 36px;
+        border-bottom: 2px solid grey;
 
+}
+    .form > input + input {
+        margin-left: 10%;
+    }
+.form > textarea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 400px;
+    border: none;
+    line-height: 25px;
+    font-size: 18px;
+    border-bottom: 2px solid grey;
+    resize: vertical;
+    margin-bottom: 30px;
+
+}
+@media(max-width:1100px) {
+    .form > input { 
+        width: 100%;
+    }
+    .form > input + input {
+        margin-left: 0;
+    }
 }

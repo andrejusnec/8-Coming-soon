@@ -46,7 +46,23 @@ footer.container > .row-short{
 }
 .hero .form {
     margin-bottom: var(--hero_space);
+    width: 90%;
+    margin: 0 5% var(--hero_space);
 }
+.hero .form > input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-bottom-color:  white;
+}
+.hero .form > input::placeholder {
+    color: white;
+}
+.hero .form > .btn{
+    float: none;
+
+}
+
 /*main conent*/
 
 /*footer*/
@@ -82,6 +98,9 @@ main p{
 main p > a {
     color: var(--second-color);
     text-decoration: none;
+}
+main .form > .btn {
+    float: right;
 }
 
 /* footer */
