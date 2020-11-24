@@ -47,6 +47,7 @@ footer.container > .row-short{
 .hero .form {
     margin-bottom: var(--hero_space);
     width: 90%;
+    margin: 0 5% var(--hero_space);
 }
 .hero .form > input {
     width: 100%;
