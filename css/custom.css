@@ -83,6 +83,9 @@ main p > a {
     color: var(--second-color);
     text-decoration: none;
 }
+main .form > .btn {
+    float: right;
+}
 
 /* footer */
 footer {
