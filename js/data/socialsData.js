@@ -1,4 +1,4 @@
-const socialData = [
+const socialsData = [
     {
         icon: 'facebook',
         link: '#'
@@ -29,4 +29,4 @@ const socialData = [
     },
 ];
 
-export { socialData }
+export { socialsData }
