@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link rel="shortcut icon" href="./img/logo up.png" type="image/x-icon"> <!--minimum 16x16 dydis-->
     <link rel="stylesheet" href="./css/variables.css">
     <!-- reset-->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <!--3rd party-->
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- component-->
-    <link rel="stylesheet" href="./css/mouse.css">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
     <!--custom-->
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
+
 <body>
     <div class="container hero bg-main-color">
         <div class="row-short">
@@ -24,31 +29,83 @@
             <h1>Coming Soon</h1>
             <p>Lorem ipsum dolor sit amet.</p>
             <div class="clock">
-                Clock
-            </div>
-            <form class="form"> Forma
+                <div class="columas">
+                    <div class="number">432</div>
+                    <div class="time">Days</div>
+                </div>
+                <div class="columas">
+                    <div class="number">09</div>
+                    <div class="time">Hours</div>
+                </div>
+                <div class="columas">
+                    <div class="number">37</div>
+                    <div class="time">Minutes</div>
+                </div>
+                <div class="columas">
+                    <div class="number">39</div>
+                    <div class="time">Seconds</div>
+                </div>
+        </div>
+            <form class="form"> 
+                <input type="email" placeholder="E-mail" required>
+                <div class="btn">Subscribe now!</div>
             </form>
             <div class="mouse">
-                mouse
+                <div class="wheel"></div>
             </div>
         </div>
     </div>
     <main class="container">
         <div class="row">
             <div class="colum left">
-                left content
+                <h2>About Startup</h2>
+                <p> Lorem ipsum dolor sit <a href="#">Matrox</a> amet.</p>
+                <div class="progress-bar">PROGRESS BAR</div>
+                <div class="progress-bar">PROGRESS BAR</div>
+                <div class="progress-bar">PROGRESS BAR</div>
+
             </div>
             <div class="colum right">
-                right conent
+                <h2>Questions?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                    <a href="mailto:andrejus.necvetnas@gmail.com">
+                        andrejus.necvetnas@gmail.com</a> 
+                    adipisicing elit. Repudiandae, modi?</p>
+                    <div class="form">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="E-mail" required>
+                        <textarea maxlength="1000" placeholder="Enter yout text here..." required></textarea>
+                         <!--<input type="submit" value="Send message">-->
+                         <div class="btn">Send message</div>
+                    </div>
             </div>
         </div>
     </main>
-    <footer class="container bg-main-color"S>
+    <footer class="container bg-main-color">
         <div class="row">
-            Social
-        </div>
+            <!-- 
+            <a href="#" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-dribbble" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-tumblr" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-linkedin" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+            <a href="#" target="_blank" class="fa fa-rss" aria-hidden="true"></a> 
+            -->
+         </div>
+        
         <div class="row-short">
-            Bottom Text
+            <img src="./img/logo-white.png" alt="Matrox footer logo">
+            <div class="text-trio">
+                <div class="text">Copyright &copy; 2020 <a href="#">Matrox</a>
+                </div>
+                <div class="text">All Rights reserved</div>
+                <div class="text">Designed by <a href="#">TrendyTheme</a></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, <a href="#"> 200+</a> 
+                adipisicing elit. Ipsum in voluptatum maiores libero
+                perspiciatis exercitationem iure expedita, <a href="#">Matrox</a> autem 
+                doloribus provident!</p>
         </div>
     </footer>
     <script src="./js/main.js" type="module"></script>

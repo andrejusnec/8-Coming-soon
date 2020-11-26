@@ -2,10 +2,15 @@
 /*.layout*/
 .container.hero {
     padding-bottom: var(--section_padding);
+    background-image: url(../img/hero\ bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom center;
+    min-height: 100vh;
 }
 footer.container {
-    padding-top: 0;
     padding: calc(var(--section_padding) * 1.5);
+    padding-top: 0;
 }
 footer.container > .row-short{
     margin-top: var(--section_padding);
@@ -27,11 +32,10 @@ footer.container > .row-short{
     font-size: 50px;
     width: 100%;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: calc(var(--hero_space));
+    margin-bottom: var(--hero_space);
 }
 .hero p {
-    color: rgb(58, 51, 51);
+    color: var(--grey-color);
     width: 100%;
     font-size: 18px;
     display: inline-block;
@@ -41,8 +45,23 @@ footer.container > .row-short{
     margin-bottom: calc(var(--hero_space)*2);
 }
 .hero .form {
-    margin-bottom: calc(var(--hero_space));
+    margin-bottom: var(--hero_space);
+    width: 90%;
+    margin: 0 5% var(--hero_space);
 }
+.hero .form > input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-bottom-color:  white;
+}
+.hero .form > input::placeholder {
+    color: white;
+}
+.hero .form > .btn{
+    float: none;
+}
+
 /*main conent*/
 
 /*footer*/
@@ -59,3 +78,95 @@ footer.container > .row-short{
     text-align: center;
     
 }*/
+main h2{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--main_space);
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+main p{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: var(--grey-color);
+    line-height: 26px;
+    margin-bottom: var(--main_space);
+}
+main p > a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+main .form > .btn {
+    float: right;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+}
+footer.container > .row {
+    border-bottom: 2px solid white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+footer .fa {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+footer .fa:hover {
+    background-color: white;
+    color: blue;
+}
+footer .text-trio {
+    display: inline-block;
+    width: 100%;
+}
+    footer .text-trio > .text {
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+    }
+    footer .text-trio > .text::before {
+        display: inline-block;
+        content: '';
+        width: 1px;
+        height: 14px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: -2px;
+        transform: translateY(-50%);
+    }
+    footer .text-trio > .text:first-of-type::before{
+        display: none;
+    }
+    footer p{
+        display: inline-block;
+        width: 100%;
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        footer .text-trio > .text {
+            width: 100%;
+            padding: 0;
+        }
+            footer .text-trio > .text::before {
+                display: none;
+            }
+    }

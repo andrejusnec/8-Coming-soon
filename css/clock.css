@@ -1,3 +1,33 @@
 .clock {
-
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+    .clock > .columas {
+        display: inline-block;
+        width: 25%;
+        float: left;
+    }
+        .clock > .columas > .number {
+            font-size: 58px;
+            font-weight: bolder;
+            line-height: 50px;
+        }
+        .clock > .columas > .time {
+            font-size: 20px;
+        }
+@media (max-width:700px) {
+    .clock > .columas {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+}
+@media (max-width:320px) {
+    .clock > .columas {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+    }
 }
