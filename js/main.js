@@ -1,4 +1,5 @@
-import { renderSocial } from "./components/renderSocial";
-import { socialData } from "./data/socialData";
+import { renderSocials } from "./components/social/renderSocials.js";
+import { socialsData } from './data/socialsData.js';
 
-renderSocial(socialData);
+renderSocials('footer > .row', socialsData);
+
