@@ -8,12 +8,12 @@
         width: 25%;
         float: left;
     }
-        .clock > .columas > .number {
+        .clock > .columas > .time {
             font-size: 58px;
             font-weight: bolder;
             line-height: 50px;
         }
-        .clock > .columas > .time {
+        .clock > .columas > .number {
             font-size: 20px;
         }
 @media (max-width:700px) {
