@@ -115,6 +115,7 @@ footer.container > .row {
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    position: relative;
 }
 footer .fa {
     display: inline-block;
@@ -130,9 +131,15 @@ footer .fa:hover {
     background-color: white;
     color: blue;
 }
+footer .btn .circle{
+    position: absolute;
+    top: -24px;
+    right: -13px;
+}
 footer .text-trio {
     display: inline-block;
     width: 100%;
+    margin-top: 20px;
 }
     footer .text-trio > .text {
         display: inline-block;
