@@ -10,6 +10,6 @@ function isValidEmail(email) {
         return `Email pastas negali buti per ilgas ${maxEmailLength} simnoliu.
         (virsytas ${email.length - maxEmailLength} simboliu.)`
     }
-
+    return true;
 }
 export { isValidEmail }

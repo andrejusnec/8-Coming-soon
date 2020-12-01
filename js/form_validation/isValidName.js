@@ -11,7 +11,7 @@ function isValidName(name) {
     }
     //Turi buti tik abeceles raides
     const abc = 'qwertyuiopasdfghjklzxcvbnm';
-    for (letter of name) {
+    for (let letter of name) {
         if (!abc.includes(letter.toLowerCase())) {
             return `ERROR: Varde panaudota neleistina raide (${letter})`
         }

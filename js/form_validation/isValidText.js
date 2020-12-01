@@ -3,13 +3,13 @@ function isValidText(text) {
     if (typeof text !== 'string') {
         return 'Tekstas turi buti teksto tipo';
     }
-    if (email === '') {
+    if (text === '') {
         return 'Tekstas negali buti tuscias';
     }
-    if (email.length > maxEmailLength) {
+    if (text.length > maxTextLength) {
         return `Tekstas negali buti ilgesnis nei ${maxTextLength} simnoliu.
         (virsytas ${text.length - maxTextLength} simboliu.)`
     }
-
+    return true;
 }
 export { isValidText }
