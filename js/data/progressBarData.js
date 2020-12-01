@@ -12,7 +12,7 @@ const progressBarData = [
     {
         selector: '.colum.left',
         title: 'UX',
-        value: 50,
+        value: 100,
     },
 ];
 

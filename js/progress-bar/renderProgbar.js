@@ -17,7 +17,7 @@ function renderProgressBar(selector, title, value) {
         <div class="value">${value}%</div>
     </div>
     <div class="bottom">
-        <div class="bar" style="${value}%;">
+        <div class="bar" style="width: ${value}%;">
             <div class="loader"></div>
         </div>
     </div>
