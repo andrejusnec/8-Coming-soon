@@ -49,13 +49,13 @@ footer.container > .row-short{
     width: 90%;
     margin: 0 5% var(--hero_space);
 }
-.hero .form > input {
+.hero .form > input:not(.btn) {
     width: 100%;
     background-color: transparent;
     color: white;
     border-bottom-color:  white;
 }
-.hero .form > input::placeholder {
+.hero .form > input:not(.btn)::placeholder {
     color: white;
 }
 .hero .form > .btn{

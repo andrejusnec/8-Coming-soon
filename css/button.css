@@ -11,6 +11,7 @@
     opacity: 80%;
     box-shadow: 5px 5px 10px #0008;
     text-align: center;
+    border: none;
 }
     .btn:hover {
         box-shadow: 5px 5px 10px #000a;
