@@ -1,9 +1,15 @@
 class Toast {
+/**
+ *Konstruktorius 
+ @constructor 
+ */
     constructor() {
         this.selector = 'body';
         this.renderIntoParentDOM = document.querySelector(this.selector);
         this.DOM = null; // reprezentuoja pati naujai sukurta elementa
         this.textDOM = null; // elementas kur vaizduosime teksta
+        this.closeDOM = null; //Elementas skirtas uzdaryti toast
+        this.closeTimer = null; // laikrodis , reguliojantis kada uzdaryti pranesima
     }
     /**
      * 
@@ -21,9 +27,13 @@ class Toast {
         if (type === 'error') {
             this.DOM.classList.add('error')
         }
+        this.closeTimer = setTimeout(() => {  // Uzdaro zinutes langa po tam tikro laiko
+            this.hide();
+        }, 5000)
     }
     hide() {
         this.DOM.classList.remove('visible');
+        clearTimeout(this.closeTimer);
     }
 
     render() {
@@ -37,6 +47,12 @@ class Toast {
         this.renderIntoParentDOM.insertAdjacentHTML('beforeend', HTML);
         this.DOM = this.renderIntoParentDOM.querySelector('.toast');
         this.textDOM = this.DOM.querySelector('p');
+        this.closeDOM = this.DOM.querySelector('.fa-times');
+        console.log
+
+        this.closeDOM.addEventListener('click', () => {
+            this.hide();
+        })
         
     }
 }
