@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
-    <link rel="shortcut icon" href="./img/logo up.png" type="image/x-icon"> <!--minimum 16x16 dydis-->
+    <link rel="shortcut icon" href="./img/logo up.png" type="image/x-icon">
+    <!--minimum 16x16 dydis-->
     <link rel="stylesheet" href="./css/variables.css">
     <!-- reset-->
     <link rel="stylesheet" href="./css/reset.css">
@@ -17,7 +18,8 @@
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
-    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="./css/toast.css">
     <!--custom-->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -30,25 +32,26 @@
             <p>Lorem ipsum dolor sit amet.</p>
             <div class="clock">
                 <div class="columas">
-                    <div class="number">432</div>
-                    <div class="time">Days</div>
+                    <div class="time">432</div>
+                    <div class="number">Days</div>
                 </div>
                 <div class="columas">
-                    <div class="number">09</div>
-                    <div class="time">Hours</div>
+                    <div class="time">09</div>
+                    <div class="number">Hours</div>
                 </div>
                 <div class="columas">
-                    <div class="number">37</div>
-                    <div class="time">Minutes</div>
+                    <div class="time">37</div>
+                    <div class="number">Minutes</div>
                 </div>
                 <div class="columas">
-                    <div class="number">39</div>
-                    <div class="time">Seconds</div>
+                    <div class="time">39</div>
+                    <div class="number">Seconds</div>
                 </div>
-        </div>
-            <form class="form"> 
-                <input type="email" placeholder="E-mail" required>
-                <div class="btn">Subscribe now!</div>
+            </div>
+            <form class="form">
+                <input type="email" placeholder="E-mail" required data-validation="email">
+                <input type="submit" value="Subscribe Now!" class="btn">
+                <!--<div class="btn">Subscribe now!</div>-->
             </form>
             <div class="mouse">
                 <div class="wheel"></div>
@@ -60,29 +63,26 @@
             <div class="colum left">
                 <h2>About Startup</h2>
                 <p> Lorem ipsum dolor sit <a href="#">Matrox</a> amet.</p>
-                <div class="progress-bar">PROGRESS BAR</div>
-                <div class="progress-bar">PROGRESS BAR</div>
-                <div class="progress-bar">PROGRESS BAR</div>
-
             </div>
             <div class="colum right">
                 <h2>Questions?</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur
                     <a href="mailto:andrejus.necvetnas@gmail.com">
-                        andrejus.necvetnas@gmail.com</a> 
+                        andrejus.necvetnas@gmail.com</a>
                     adipisicing elit. Repudiandae, modi?</p>
-                    <div class="form">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="E-mail" required>
-                        <textarea maxlength="1000" placeholder="Enter yout text here..." required></textarea>
-                         <!--<input type="submit" value="Send message">-->
-                         <div class="btn">Send message</div>
-                    </div>
+                <div class="form">
+                    <input type="text" placeholder="Name" data-validation="name">
+                    <input type="email" placeholder="E-mail" required data-validation="email">
+                    <textarea maxlength="1000" placeholder="Enter yout text here..." required data-validation="text"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <!--<div class="btn">Send message</div>-->
+                </div>
             </div>
         </div>
     </main>
     <footer class="container bg-main-color">
         <div class="row">
+            <a href="#" class="btn circle fa fa-angle-up"></a>
             <!-- 
             <a href="#" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
             <a href="#" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
@@ -92,8 +92,8 @@
             <a href="#" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
             <a href="#" target="_blank" class="fa fa-rss" aria-hidden="true"></a> 
             -->
-         </div>
-        
+        </div>
+
         <div class="row-short">
             <img src="./img/logo-white.png" alt="Matrox footer logo">
             <div class="text-trio">
@@ -102,9 +102,9 @@
                 <div class="text">All Rights reserved</div>
                 <div class="text">Designed by <a href="#">TrendyTheme</a></div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, <a href="#"> 200+</a> 
+            <p>Lorem ipsum dolor sit amet consectetur, <a href="#"> 200+</a>
                 adipisicing elit. Ipsum in voluptatum maiores libero
-                perspiciatis exercitationem iure expedita, <a href="#">Matrox</a> autem 
+                perspiciatis exercitationem iure expedita, <a href="#">Matrox</a> autem
                 doloribus provident!</p>
         </div>
     </footer>
