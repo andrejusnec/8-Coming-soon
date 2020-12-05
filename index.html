@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
     <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="./css/toast.css">
     <!--custom-->
     <link rel="stylesheet" href="./css/custom.css">
 </head>
@@ -48,8 +49,9 @@
                 </div>
             </div>
             <form class="form">
-                <input type="email" placeholder="E-mail" required>
-                <div class="btn">Subscribe now!</div>
+                <input type="email" placeholder="E-mail" required data-validation="email">
+                <input type="submit" value="Subscribe Now!" class="btn">
+                <!--<div class="btn">Subscribe now!</div>-->
             </form>
             <div class="mouse">
                 <div class="wheel"></div>
@@ -69,11 +71,11 @@
                         andrejus.necvetnas@gmail.com</a>
                     adipisicing elit. Repudiandae, modi?</p>
                 <div class="form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="E-mail" required>
-                    <textarea maxlength="1000" placeholder="Enter yout text here..." required></textarea>
-                    <!--<input type="submit" value="Send message">-->
-                    <div class="btn">Send message</div>
+                    <input type="text" placeholder="Name" data-validation="name">
+                    <input type="email" placeholder="E-mail" required data-validation="email">
+                    <textarea maxlength="1000" placeholder="Enter yout text here..." required data-validation="text"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <!--<div class="btn">Send message</div>-->
                 </div>
             </div>
         </div>
